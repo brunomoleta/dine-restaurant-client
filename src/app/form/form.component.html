@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" [ngModel]="formValues.name" (ngModelChange)="onNameChange($event)"/>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" [ngModel]="formValues.email" (ngModelChange)="onEmailChange($event)"/>
+  <label for="time">Time</label>
+  <input type="time" id="time" name="time" [ngModel]="formValues.time" (ngModelChange)="onTimeChange($event)"/>
+  <label for="date">Date</label>
+  <input type="date" id="date" name="time" [ngModel]="formValues.date" (ngModelChange)="onDateChange($event)"/>
+  <label for="numberPeople">Number of people</label>
+  <input type="number" id="numberPeople" name="numberPeople" [(ngModel)]="formValues.numberPeople"/>
+
+  <button type="submit">Enviar</button>
+</form>
